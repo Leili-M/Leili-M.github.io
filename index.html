@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leili Motahari — Portfolio</title>
+  <meta name="description" content="Leili Motahari — Applied Mathematics (Sharif University of Technology). Data Science • ML • CV • Teaching Assistant." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --muted: #4b5563;
+      --text: #111827;
+      --brand: #7c3aed; /* violet-600 */
+      --brand-2: #06b6d4; /* cyan-500 */
+      --ring: rgba(124, 58, 237, 0.25);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; background: linear-gradient(180deg, #ffffff 0%, #f9fafb 40%, #f3f4f6 100%); color: var(--text); }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { position: sticky; top: 0; backdrop-filter: blur(10px); background: rgba(255,255,255,0.9); border-bottom: 1px solid #e5e7eb; z-index: 50; }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 24px; }
+    .brand { font-weight: 800; letter-spacing: 0.4px; color: var(--brand); }
+    .brand span { background: linear-gradient(90deg, var(--brand), var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .nav a { color: var(--muted); font-weight: 600; margin-left: 16px; }
+    .nav a:hover { color: var(--text); }
+
+    .hero { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 28px; padding: 56px 24px 24px; align-items: center; }
+    .hero-card { background: var(--card); border: 1px solid #e5e7eb; border-radius: 24px; padding: 28px; box-shadow: 0 6px 16px rgba(0,0,0,0.05); }
+    .hero h1 { margin: 0 0 10px; font-size: 42px; line-height: 1.1; color: var(--text); }
+    .hero p.lead { color: var(--muted); font-size: 18px; margin: 6px 0 20px; }
+    .chiprow { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 16px; }
+    .chip { padding: 7px 12px; border-radius: 999px; background: #eef2ff; border: 1px solid #c7d2fe; font-size: 13px; color: #3730a3; }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+    .button { display: inline-flex; align-items: center; gap: 10px; padding: 11px 16px; border-radius: 12px; border: 1px solid #e5e7eb; background: #ffffff; color: var(--brand); font-weight: 700; letter-spacing: 0.2px; box-shadow: 0 4px 12px rgba(124, 58, 237, 0.08); }
+    .button.primary { background: linear-gradient(90deg, var(--brand), var(--brand-2)); border-color: transparent; color: white; box-shadow: 0 8px 20px var(--ring); }
+    .button:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-decoration: none; }
+
+    .section { margin: 40px 0 24px; }
+    .section h2 { font-size: 26px; margin: 0 0 14px; letter-spacing: 0.3px; color: var(--text); }
+    .card { background: var(--card); border: 1px solid #e5e7eb; border-radius: 16px; padding: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+
+    .item { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); }
+   .item h3 { margin: 0 0 4px; font-size: 18px; color: var(--text); }
+    .item p, li { color: var(--muted); }
+    .meta { color: #6b7280; font-size: 13px; margin-bottom: 6px; }
+
+    footer { border-top: 1px solid #e5e7eb; margin-top: 40px; padding: 22px 0 60px; color: var(--muted); background: #f9fafb; }
+
+    @media (max-width: 980px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav container">
+      <div class="brand">Leili <span>Motahari</span></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#experience">TA</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-card">
+        <h1>Applied Mathematics × Data & AI</h1>
+        <p class="lead">BS student at Sharif University of Technology (QS 2025 #342). Data Science, Machine Learning, Computer Vision, Speech/Text; Teaching Assistant experience across CS & DS courses.</p>
+        <div class="chiprow">
+          <div class="chip">Python</div>
+          <div class="chip">PyTorch</div>
+          <div class="chip">TensorFlow</div>
+          <div class="chip">scikit‑learn</div>
+          <div class="chip">XGBoost</div>
+          <div class="chip">OpenCV</div>
+          <div class="chip">NLP</div>
+          <div class="chip">ASR/TTS</div>
+          <div class="chip">Pandas</div>
+          <div class="chip">Matplotlib & Plotly</div>
+          <div class="chip">SQL</div>
+          <div class="chip">HTML/CSS</div>
+          <div class="chip">Tailwind/Bootstrap</div>
+        </div>
+        <div class="cta-row">
+          <a class="button primary" href="#contact">Get in touch</a>
+          <a class="button" href="https://github.com/Leili-M" target="_blank" rel="noopener">GitHub</a>
+          <a class="button" href="https://www.linkedin.com/in/leili-motahari-153655276/?originalSubdomain=ir" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button" href="https://scholar.google.com/citations?user=TxBy4FkAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="button" href="mailto:leilimotahari@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="section" id="about">
+          <h2>About</h2>
+          <p class="lead">I’m passionate about data‑driven problem solving across speech/text, ML/DL, and computer vision. I enjoy building practical projects and supporting students as a TA.</p>
+          <p class="meta">Last updated: Oct 2025</p>
+        </div>
+        <div class="section" id="education">
+          <h2>Education</h2>
+          <div class="item">
+            <h3>Sharif University of Technology — BS in Applied Mathematics</h3>
+            <div class="meta">Sept 2020 – Sept 2025 • Tehran, Iran</div>
+            <p>GPA: 15.74/20. Ranked top 1% in the national university entrance exam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="research">
+      <h2>Research Experience</h2>
+      <div class="grid">
+        <div class="item" style="grid-column: span 12;">
+          <h3>Multi‑Objective Human Speech Analysis using Whisper Models</h3>
+          <div class="meta">Fall 2025 – Present • Supervisor: Dr. Khalaj</div>
+          <ul>
+            <li>Developer on a pipeline that jointly performs ASR transcription, emotion recognition, and speaker ID for human speech analysis using Whisper.</li>
+          </ul>
+        </div>
+        <div class="item" style="grid-column: span 12;">
+          <h3>A Hundred Attacks in Distributed Systems</h3>
+          <div class="meta">Winter 2024 – Fall 2024 • Supervisor: Dr. Vaezi</div>
+          <ul>
+            <li>Reviewed 100+ attack types, countermeasures, and open questions; compiled a cohesive technical report inspired by HAL preprint 03657061.</li>
+          </ul>
+        </div>
+        <div class="item" style="grid-column: span 12;">
+          <h3>Transformer Neural Networks: Architecture and Mechanisms</h3>
+          <div class="meta">Summer 2024 • Supervisor: Dr. Sabzi</div>
+          <ul>
+            <li>Structured explanations of encoder–decoder, self‑attention, multi‑head attention with toy examples.</li>
+          </ul>
+        </div>
+        <div class="item" style="grid-column: span 12;">
+          <h3>Analysis of Learning‑Rate Scheduling in DNNs</h3>
+          <div class="meta">Summer 2024 • Supervisor: Dr. Sabzi</div>
+          <ul>
+            <li>Compared step, exponential, cosine annealing, and cyclical schedules with math forms and practical implications.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="experience">
+      <h2>Teaching Assistant Experience</h2>
+      <div class="grid">
+        <div class="item" style="grid-column: span 12;">
+          <ul>
+            <li><strong>Data Science</strong> — Fall 2025 (Dr. Khalaj): ML (SVM, DT, RF, KNN), K‑Means, PageRank, PCA, t‑SNE; AutoML (H2O), MLP, RNN/LSTM, DVC; scraping, DB population, hypothesis testing; slides on probability & statistics.</li>
+            <li><strong>Software Engineering</strong> — Fall 2025 (Dr. Rivadeh): Assignments/exams on design patterns, agile, and system architecture.</li>
+            <li><strong>Data Transmission & Computer Networks</strong> — Fall 2025 (Dr. Peyvandi): Theoretical assignments on OSI/TCP‑IP, routing, and network security.</li>
+            <li><strong>Discrete Mathematics</strong> — Spring 2025 (Dr. Ebrahimi): Logic, graph theory, combinatorics.</li>
+            <li><strong>Data Analysis & Regression</strong> — Spring 2025 (A. Kadivar): Graded quizzes and project reports; feedback on regression and feature engineering.</li>
+            <li><strong>Probability & Statistics</strong> — Spring 2025 (Dr. Sharifi‑Zarchi), Spring 2024 (Dr. Mostafid): Real‑data projects, hypothesis testing, linear regression.</li>
+            <li><strong>Python Programming (Data‑Science Focus)</strong> — Fall 2024 (A. Kadivar): Viz (Matplotlib, Seaborn, Plotly), debugging, EDA.</li>
+            <li><strong>Operating Systems</strong> — Spring 2024 (Dr. Vaezi): Scheduling, memory, filesystems.</li>
+            <li><strong>Python Programming</strong> — Spring 2023 & 2024 (Dr. Arminpour): Head TA; assignments, projects, exams for 100+ students/semester; mentored junior TAs.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="item" style="grid-column: span 6;">
+          <h3>Traffic Counter Project</h3>
+          <p>Traffic counting on video: vehicle detection, tracking, and flow analytics with reporting.</p>
+          <p class="meta">Python, OpenCV</p>
+          <p><a href="https://traffic-counter-project-l9fnpsk492wma8dkaic6vr.streamlit.app/" target="_blank" rel="noopener">Project Page</a> • <a href="https://github.com/leili-m/traffic-counter-project/blob/main/script.py" target="_blank" rel="noopener">Repository</a></p>
+        </div>
+        <div class="item" style="grid-column: span 6;">
+          <h3>Beauty Profitability Analysis — Product Insights (Digikala)</h3>
+          <p>Estimated product sales & customer satisfaction to pick high‑ROI products.</p>
+          <p class="meta">Python, pandas</p>
+          <p><a href="https://leili-m.github.io/DigikalaProject/" target="_blank" rel="noopener">Project Page</a></p>
+        </div>
+        <div class="item" style="grid-column: span 6;">
+          <h3>Data Science Course Projects</h3>
+          <p>Supervised/unsupervised ML, NLP, DL, and generative models across multiple datasets.</p>
+          <p class="meta">TensorFlow, PyTorch, NLTK, spaCy</p>
+          <p><a href="https://github.com/Leili-M/Data-Science-Assignments/tree/main" target="_blank" rel="noopener">Repository</a></p>
+        </div>
+        <div class="item" style="grid-column: span 6;">
+          <h3>Digital Image Processing (Final Project)</h3>
+          <p>Template matching for object detection; PatchMatch‑based inpainting after object removal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="item" style="grid-column: span 6;">
+          <h3>Programming Languages</h3>
+          <p>Python, Java, R, JavaScript</p>
+        </div>
+        <div class="item" style="grid-column: span 6;">
+          <h3>Speech & Text Processing</h3>
+          <p>Librosa, SpeechRecognition, WhisperX, Hugging Face, NLTK, spaCy; ASR & TTS experience (incl. Microsoft TTS for data generation)</p>
+        </div>
+        <div class="item" style="grid-column: span 6;">
+          <h3>ML & DL</h3>
+          <p>scikit‑learn, XGBoost, LightGBM, Keras, TensorFlow, PyTorch; regression, classification, clustering, generative models; familiar with BERT & GPT.</p>
+        </div>
+        <div class="item" style="grid-column: span 6;">
+          <h3>Data Science & Visualization</h3>
+          <p>NumPy, pandas, SciPy, Matplotlib, Seaborn, Plotly, Streamlit</p>
+        </div>
+        <div class="item" style="grid-column: span 6;">
+          <h3>Computer Vision</h3>
+          <p>OpenCV</p>
+        </div>
+        <div class="item" style="grid-column: span 6;">
+          <h3>Tools & Web</h3>
+          <p>Git, SQL, HTML, CSS, SCSS, Tailwind CSS, Bootstrap</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="work">
+      <h2>Work Experience</h2>
+      <div class="grid">
+        <div class="item" style="grid-column: span 12;">
+          <h3>Data Analyst & Coordinator — D‑mag.ir (Analytical Magazine)</h3>
+          <div class="meta">Sep 2025 – Present</div>
+          <p>Reviewed journal reports for methodological correctness and clear communication; coordinated report workflows for consistency and accuracy.</p>
+        </div>
+        <div class="item" style="grid-column: span 12;">
+          <h3>Python Programming Instructor — Tehran Institute of Technology (MFT)</h3>
+          <div class="meta">May 2023 – Oct 2024</div>
+          <p>Designed and taught courses on algorithms, Python, and advanced applications with hands‑on problem solving.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="extras">
+      <h2>Languages, Volunteering & Other</h2>
+      <div class="grid">
+        <div class="item" style="grid-column: span 6;">
+          <h3>Languages</h3>
+          <p>Persian (native); English — IELTS 7 (L8, R6, W6, S7), valid Dec 2024–Dec 2026.</p>
+        </div>
+        <div class="item" style="grid-column: span 6;">
+          <h3>Volunteering</h3>
+          <p>Game Theory Workshop Staff @ Rasta (Summer 2024): co‑designed accessible content for high‑school students using storytelling and interactive teaching.</p>
+        </div>
+        <div class="item" style="grid-column: span 12;">
+          <h3>Other</h3>
+          <p>10+ years piano; charcoal drawing (realistic style); award‑winning mobile photography.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="contact">
+      <h2>Contact</h2>
+      <div class="item">
+        <p>Email: <a href="mailto:leilimotahari@gmail.com">leilimotahari@gmail.com</a></p>
+        <p>Phone: <a href="tel:+989129458379">(+98) 912 945 8379</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/leili-motahari-153655276/?originalSubdomain=ir" target="_blank" rel="noopener">linkedin.com/in/leili-motahari</a></p>
+        <p>GitHub: <a href="https://github.com/Leili-M" target="_blank" rel="noopener">github.com/Leili-M</a></p>
+        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=TxBy4FkAAAAJ&hl=en" target="_blank" rel="noopener">scholar profile</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Leili Motahari. Built with vanilla HTML/CSS. Hosted on GitHub Pages.</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
